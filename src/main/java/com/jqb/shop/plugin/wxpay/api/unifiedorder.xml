@@ -1,0 +1,20 @@
+<xml>
+	<appid>wx1834026d6576db3a</appid>
+	<attach>wx 支付 test</attach>
+	<body>Ipad mini 16G 白色</body>
+	<detail>Ipad mini 16G 白色</detail>
+	<device_info>WEB</device_info>
+	<fee_type>CNY</fee_type>
+	<goods_tag>WXG</goods_tag>
+	<mch_id>1296267601</mch_id>
+	<nonce_str>0994ffb598fc4fccb4363813823492b4</nonce_str>
+	<notify_url>http://localhost:8086/shopmobile/navigation/wxpay?page=ResultNotifyPage
+	</notify_url>
+	<openid>oUpF8uMuAJO_M2pxb1Q9zNjWeS6o</openid>
+	<out_trade_no>20150806125346</out_trade_no>
+	<sign>2B50788645F898B4DF25DBC9A91C994A</sign>
+	<spbill_create_ip>176.16.32.2</spbill_create_ip>
+	<time_start>20091225091010</time_start>
+	<total_fee>1</total_fee>
+	<trade_type>NATIVE</trade_type>
+</xml>

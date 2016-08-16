@@ -1,0 +1,15 @@
+<xml>
+   <appid>wx1834026d6576db3a</appid>
+   <attach>支付测试</attach>
+   <body>App支付测试</body>
+   <mch_id>1296267601</mch_id>
+   <nonce_str>eb4084f152e547cf95056b0075837d8a</nonce_str>
+   <notify_url>http://localhost:8086/shopmobile/navigation/wxpay?page=ResultNotifyPage</notify_url>
+   <openid>oUpF8uMuAJO_M2pxb1Q9zNjWeS6o</openid>
+   <out_trade_no>20150806125346</out_trade_no>
+   <spbill_create_ip>176.16.32.2</spbill_create_ip>
+   <total_fee>1</total_fee>
+   <trade_type>NATIVE</trade_type>
+   <sign>EA33E67668CFA9896F251DD08B39FA60</sign>
+</xml>
+

@@ -1,0 +1,4 @@
+# robots.txt for JQB SHOP
+
+User-agent: *
+Sitemap: /sitemap/index.xml

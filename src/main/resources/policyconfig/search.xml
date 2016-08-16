@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="GBK"?>
+<!--该报文注释主要为了方便填写，请在实际交易中将注释删除，以便减少交易的报文长度-->
+<eaiAhsXml>
+	<Header>
+		<!--必填,交易码 [平安固定不需要修改] -->
+		<TRAN_CODE>100084</TRAN_CODE>
+		<!--必填,合作伙伴代码 [平安固定不需要修改] -->
+		<BANK_CODE>80700000</BANK_CODE>
+		<!--必填,合作伙伴网点号 [平安固定不需要修改] -->
+		<BRNO>80700000</BRNO>
+		<!--合作伙伴操作员代码 由合作伙伴分配，用以标识商户唯一性(最长8字节) -->
+		<TELLERNO>80700000</TELLERNO>
+		<!--地区码 [平安固定不需要修改] -->
+		<REGION_CODE>100000</REGION_CODE>
+		<!--必填,且唯一,交易流水号,用于标识每一笔交易，交易成功后该流水号不能重复(最长20字节) -->
+		<BK_SERIAL>#JINGQUBAO</BK_SERIAL>
+		<!--交易渠道 [平安固定不需要修改] -->
+		<BK_TRAN_CHNL>WEB</BK_TRAN_CHNL>
+		<!--必填,交易日期,格式为YYYYMMDD -->
+		<BK_ACCT_DATE></BK_ACCT_DATE>
+		<!--必填,交易时间,格式为HH:MM:SS -->
+		<BK_ACCT_TIME></BK_ACCT_TIME>
+		<!--（可空）用于区分同个合作伙伴不同的出单账号(最长20字节) -->
+		<PTP_CODE></PTP_CODE>
+	</Header>
+	<Request>
+		<policyInfo>
+			<!--（非空）保单号-->
+			<policyNo></policyNo>
+			<!--（可空）保单验证码-->
+			<validateCode/>
+			<!--（可空）用于保存外部合作伙伴名称，由平安IT分配，与出单报文同名字段一致 (最长12字节)-->
+			<partnerName/>
+		</policyInfo>
+	</Request>
+</eaiAhsXml>

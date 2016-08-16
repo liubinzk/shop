@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="GB2312"?>
+<eaiAhsXml>
+	<Header>
+		<!--必填,交易码 [平安固定不需要修改] -->
+		<TRAN_CODE>100083</TRAN_CODE>
+		<!--必填,合作伙伴代码 [平安固定不需要修改] -->
+		<BANK_CODE>80700000</BANK_CODE>
+		<!--必填,合作伙伴网点号 [平安固定不需要修改] -->
+		<BRNO>80700000</BRNO>
+		<!--合作伙伴操作员代码 由合作伙伴分配，用以标识商户唯一性(最长8字节) -->
+		<TELLERNO>80700000</TELLERNO>
+		<!--地区码 [平安固定不需要修改] -->
+		<REGION_CODE>100000</REGION_CODE>
+		<!--必填,且唯一,交易流水号,用于标识每一笔交易，交易成功后该流水号不能重复(最长20字节) -->
+		<BK_SERIAL>#JINGQUBAO</BK_SERIAL>
+		<!--交易渠道 [平安固定不需要修改] -->
+		<BK_TRAN_CHNL>WEB</BK_TRAN_CHNL>
+		<!--必填,交易日期,格式为YYYYMMDD -->
+		<BK_ACCT_DATE></BK_ACCT_DATE>
+		<!--必填,交易时间,格式为HH:MM:SS -->
+		<BK_ACCT_TIME></BK_ACCT_TIME>
+		<!--（可空）用于区分同个合作伙伴不同的出单账号(最长20字节) -->
+		<PTP_CODE></PTP_CODE>
+	</Header>
+	<Request>
+		<!--意健险保险信息 -->
+		<ahsPolicy>
+			<!--（非空）保单基本信息 -->
+			<policyBaseInfo>
+				<!--（非空）投保人数，请使用阿拉伯数字，例如：1 -->
+				<applyPersonnelNum>1</applyPersonnelNum>
+				<!--（非空）与被保人关系。1:本人 2:配偶 3 :父子 4:父女 5:受益人 6:被保人 7:投保人 A:母子 B:母女 C:兄弟 
+					D:姐弟 G:祖孙 H:雇佣 I:子女 9:其他 8:转换不详 -->
+				<relationshipWithInsured>9</relationshipWithInsured>
+				<!--（非空）保单实际保费合计，请使用阿拉伯数字，例如：5.00, 类型：NUMBER(16,2) -->
+				<totalModalPremium>1.00</totalModalPremium>
+				<!--（非空）保险起期，格式yyyy-MM-dd HH:mm:ss -->
+				<insuranceBeginTime></insuranceBeginTime>
+				<!-- (非空) 保险止期，格式yyyy-MM-dd HH:mm:ss -->
+				<insuranceEndTime></insuranceEndTime>
+				<!--(月数与天数其中一项非空) 保险期限（月）,请使用阿拉伯数字，例如：12 -->
+				<applyMonth></applyMonth>
+				<!--(月数与天数其中一项非空) 保险期限（日）,请使用阿拉伯数字，例如：2 -->
+				<applyDay>15</applyDay>
+				<!-- (非空) 业务类型 1表示个人，2表示团体 -->
+				<businessType>2</businessType>
+				<!-- (非空) 币种 人民币请使用01 -->
+				<currecyCode>01</currecyCode>
+				<!--（可空）可改特别约定(最长1000字节) -->
+				<alterableSpecialPromise></alterableSpecialPromise>
+			</policyBaseInfo>
+			<!--（非空）保单扩展信息 -->
+			<policyExtendInfo>
+				<!--（非空）用于保存外部合作伙伴名称，由平安IT分配 (最长12字节) -->
+				<partnerName>ZNLX</partnerName>
+				<!--（非空）用于保存外部合作伙伴与保单号对应的号码，如合作伙伴订单号、合作伙伴序列号或单证流水号等，不同出单请求请不要重复(最长50字节) -->
+				<partnerSystemSeriesNo>#JINGQUBAO</partnerSystemSeriesNo>
+				<!-- 电子客票编号 -->
+				<eTicketNo />
+				<!-- 起始机场（三位编码） -->
+				<originAirport />
+				<!-- 目的机场（三位编码） -->
+				<destAirport />
+			</policyExtendInfo>
+			<!--（非空）投保人信息，个人投保信息或者团体投保信息根据需要选择其中一项 -->
+			<insuranceApplicantInfo>
+				<!--（当投保人为团体时非空）团体投保人信息 -->
+				<groupPersonnelInfo>
+					<!--（非空）团体名称 (最长150字节) -->
+					<groupName>北京智能联信信息科技有限公司</groupName>
+					<!--（非空）团体证件号码 (最长30字节) -->
+					<groupCertificateNo>000001</groupCertificateNo>
+					<!--（可空）团体证件类型，01表示组织机构代码证，02表示税务登记证，03表示异常证件 -->
+					<groupCertificateType>01</groupCertificateType>
+					<!--（可空）团体简称 (最长20字节) -->
+					<groupAbbr>智能联信</groupAbbr>
+					<!--（可空）联系地址 (最长100字节) -->
+					<address>北京华生国际大厦708</address>
+					<!--（可空）邮政编码 (最长6字节) -->
+					<postCode>100000</postCode>
+					<!--（可空）单位性质，07:股份 01:国有 02:集体 33:个体 03:私营 04:中外合资 05:外商独资 08:机关事业 13:社团 
+						39:中外合作 9:其他 -->
+					<companyAttribute>07</companyAttribute>
+					<!--（可空）行业类型 (最长12字节) -->
+					<industryCode />
+					<!--（可空）工商注册号 (最长20字节) -->
+					<businessRegisterId />
+					<!--（可空）电话总机区号 (最长10字节) -->
+					<phoneExchangeArea />
+					<!--（可空）电话总机 (最长30字节) -->
+					<phoneExchange />
+					<!--（可空）开户银行 (最长10字节) -->
+					<bankCode />
+					<!--（可空）开户账号 (最长30字节) -->
+					<bankAccount />
+					<!--（可空）经营区域分类 (最长2字节) -->
+					<businessRegionType />
+					<!--（可空）联系人姓名 (最长150字节) -->
+					<linkManName>朱廷发</linkManName>
+					<!--（可空）联系人性别，M表示男，F表示女 -->
+					<linkManSexCode>M</linkManSexCode>
+					<!--（可空）联系人手机号码 (最长20字节) -->
+					<linkManMobileTelephone>18500136880</linkManMobileTelephone>
+					<!--（可空）联系人email (最长60字节) -->
+					<linkManEmail>info@jingqubao.com</linkManEmail>
+				</groupPersonnelInfo>
+			</insuranceApplicantInfo>
+			<!--（非空）层级信息列表，可包含1或n个subjectInfo -->
+			<subjectInfo>
+				<!--（非空）层级信息 -->
+				<subjectInfo>
+					<!--（非空）层级实际保费合计，请使用阿拉伯数字，例如：5.00, 类型：NUMBER(16,2) -->
+					<totalModalPremium>1.00</totalModalPremium>
+					<!--（非空）组合产品列表，可包含1或n个productInfo -->
+					<productInfo>
+						<!--（非空）组合产品信息，一个组合产品可包含1或n个险种。组合产品所含险种已经由业务定义该产品时固定定义好 -->
+						<productInfo>
+							<!--(非空)组合产品代码，25751~25754，请咨询平安业务同事 -->
+							<productCode></productCode>
+							<!--（非空）投保份数，请使用阿拉伯数字，例如：1 -->
+							<applyNum>1</applyNum>
+							<!--（非空）实际保费，请使用阿拉伯数字，例如：5.00, 类型：NUMBER(16,2) -->
+							<totalModalPremium>1.00</totalModalPremium>
+						</productInfo>
+					</productInfo>
+					<!--（非空）被保险人列表。包含1个或多个insurantInfo -->
+					<insurantInfo>
+						<insurantInfo>
+							<!--（非空）人员属性 100真实被保人，200表示虚拟被保人，一般情况请填写100 -->
+							<personnelAttribute>100</personnelAttribute>
+							<!--（如果是虚拟被保人，则非空）虚拟被保险人数，请使用阿拉伯数字，例如：1 -->
+							<virtualInsuredNum />
+							<!--（非空）人员名称，例如：张三 -->
+							<personnelName></personnelName>
+							<!--（非空）性别，M表示男，F表示女 -->
+							<sexCode></sexCode>
+							<!--（非空）证件类型，01：身份证 02：护照 03：军人证 05：驾驶证 06：港澳回乡证或台胞证 99：其他。 -->
+							<certificateType>01</certificateType>
+							<!--（非空）证件号码 (最长20字节) -->
+							<certificateNo></certificateNo>
+							<!--（非空）生日，格式yyyy-MM-dd -->
+							<birthday></birthday>
+							<!--(可空 当有需求给被保人发短信时为非空)手机号码 -->
+							<mobileTelephone />
+							<!--(可空 当有需求给被保人发邮件时为非空)email地址 -->
+							<email></email>
+							<!--（可空）姓拼音 -->
+							<familyNameSpell />
+							<!--（可空）名拼音 -->
+							<firstNameSpell />
+							<!--（可空）人员年龄 -->
+							<personnelAge />
+						</insurantInfo>
+					</insurantInfo>
+				</subjectInfo>
+			</subjectInfo>
+		</ahsPolicy>
+	</Request>
+</eaiAhsXml>

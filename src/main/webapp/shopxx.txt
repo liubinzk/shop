@@ -1,0 +1,6 @@
+JQB SHOP
+Copyright 2014-2015 shopxx.net. All rights reserved.
+Support: http://www.shopxx.net
+License: http://www.shopxx.net/license
+Revision: 3.0 RELEASE
+Date: 2013-06
